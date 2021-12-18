@@ -1,0 +1,90 @@
+ <html>
+
+    <title>Index</title>
+
+    <style>
+        #marcoFotos {
+            width: 50vw;
+            height: 50vh;
+            display: block;
+            
+        }
+
+        #tPhoto {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          
+        }
+
+        #pPic {
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            background-color: aquamarine;
+        }
+
+        @media screen and (orientation: landscape) {
+            #marcoFotos{
+            max-width: 1200px;
+            max-height: 800px;
+            }
+        }
+        
+        @media screen and (orientation: portrait) {
+            #marcoFotos{
+                max-width: 600px;
+                max-height: 900px;
+            }         
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="pPic">
+        <picture id="marcoFotos">
+            <source media="(orientation: landscape) and (min-width: 1920px)" srcset="./horizontal1.heic" 
+            type="image/heic">
+            <source media="(orientation: landscape) and (min-width: 1920px)" srcset="./horizontal2.webp" type="image/webp">
+            <source media="(orientation: landscape) and (min-width: 1920px)" srcset="./horizontal3.jpg" type="image/jpg">
+
+            <source media="(orientation: portrait) and (min-width: 1200px)" srcset="./vertical1.heic" type="image/heic">
+            <source media="(orientation: portrait) and (min-width: 1200px)" srcset="./vertical2.webp" type="image/webp">
+            <source media="(orientation: portrait) and (min-width: 1200px)" srcset="./vertical3.jpg" type="image/jpg">
+
+            <source media="(orientation: landscape) and (min-width: 800px)" srcset="./horizontal4.heic" 
+            type="image/heic">
+            <source media="(orientation: landscape) and (min-width: 800px)" srcset="./horizontal5.webp" 
+            type="image/webp">
+            <source media="(orientation: landscape) and (min-width: 800px)" srcset="./horizontal6.jpg" 
+            type="image/jpg">
+
+            <source media="(orientation: portrait) and (min-width: 600px)" srcset="./vertical4.heic" 
+            type="image/heic">
+            <source media="(orientation: portrait) and (min-width: 600px)" srcset="./vertical5.webp" 
+            type="image/webp">
+            <source media="(orientation: portrait) and (min-width: 600px)" srcset="./vertical6.jpg" 
+            type="image/jpg">
+
+            <img id="tPhoto" alt="Good Vibes" title="Mapache mood" src="./horizontal6.jpg">
+
+        </picture>
+    </div>
+ </body>
+           
+ </html>
+            
+
+            
+    
+
+
+            
+        
+    
+
+
+
+
